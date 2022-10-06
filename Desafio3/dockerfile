@@ -1,0 +1,6 @@
+FROM httpd:2.4
+LABEL email="luizasabchuk@gmail.com"
+ENV PORT=8080
+ADD index.html /usr/local/apache2/htdocs/
+COPY index.html /var/www/html/
+EXPOSE ${PORT}
